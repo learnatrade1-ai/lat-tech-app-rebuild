@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAT Technician Pro (Free)</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>LAT Technician Pro</h1>
+    <span class="app-badge">FREE</span>
+  </header>
+
+  <nav id="tabs" class="tabs"></nav>
+  <main id="app" class="app-main"></main>
+
+  <script>
+    window.LAT_CONFIG = { mode: "free" };
+  </script>
+  <script src="assets/js/helpers.js"></script>
+  <script src="assets/js/auth-rules.js"></script>
+  <script src="assets/js/ui-renderers.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/app-core.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "cornelius-ed150-no-carbonation",
+    "title": "Cornelius ED-150 No Carbonation",
+    "summary": "Check CO2 supply, regulator setting, and carbonator operation.",
+    "access": "free"
+  },
+  {
+    "id": "water-in-co2-line",
+    "title": "Water in CO2 Line",
+    "summary": "Possible check valve failure or backflow issue in the carbonation system.",
+    "access": "pro"
+  }
+]

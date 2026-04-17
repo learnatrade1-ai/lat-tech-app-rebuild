@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.app-badge {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #334155;
+}
+
+.app-badge.pro {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  overflow-x: auto;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.tabs button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #1e293b;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tabs button.active {
+  background: #22c55e;
+  color: #052e16;
+  font-weight: bold;
+}
+
+.app-main {
+  padding: 16px;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.lock-note {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #fbbf24;
+}

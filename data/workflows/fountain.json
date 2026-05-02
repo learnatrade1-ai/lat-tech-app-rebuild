@@ -3,12 +3,40 @@
     "id": "cornelius-ed150-no-carbonation",
     "title": "Cornelius ED-150 No Carbonation",
     "summary": "Check CO2 supply, regulator setting, and carbonator operation.",
-    "access": "free"
+    "access": "free",
+    "steps": [
+      {
+        "title": "Step 1: Check CO2 Supply",
+        "text": "Verify the CO2 tank is open, not empty, and the primary regulator is active."
+      },
+      {
+        "title": "Step 2: Check Regulator Pressure",
+        "text": "Confirm the CO2 regulator is set to the correct operating pressure for the fountain system."
+      },
+      {
+        "title": "Step 3: Check Carbonator Operation",
+        "text": "Listen for the carbonator pump. If the pump does not run, verify power, water supply, and control signal."
+      }
+    ]
   },
   {
     "id": "water-in-co2-line",
     "title": "Water in CO2 Line",
     "summary": "Possible check valve failure or backflow issue in the carbonation system.",
-    "access": "pro"
+    "access": "pro",
+    "steps": [
+      {
+        "title": "Step 1: Shut Off CO2",
+        "text": "Turn off CO2 and safely depressurize the line before service."
+      },
+      {
+        "title": "Step 2: Inspect Check Valve",
+        "text": "Check for failed or leaking check valves allowing water to backflow into the CO2 line."
+      },
+      {
+        "title": "Step 3: Correct Backflow Issue",
+        "text": "Replace the failed check valve and purge the affected CO2 line before returning the system to service."
+      }
+    ]
   }
 ]

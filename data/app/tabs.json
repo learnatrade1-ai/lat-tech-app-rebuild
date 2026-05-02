@@ -1,0 +1,5 @@
+[
+  { "id": "workflows", "label": "Workflows" },
+  { "id": "tools", "label": "Tools" },
+  { "id": "parts", "label": "Parts" }
+]

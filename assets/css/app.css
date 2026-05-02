@@ -89,3 +89,13 @@ body {
   font-size: 12px;
   color: #fbbf24;
 }
+.back-button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  background: #334155;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}

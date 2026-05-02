@@ -12,7 +12,19 @@
         "title": "CO2 Supply Check",
         "text": "Is the CO2 tank open and not empty?",
         "yes": "s2",
-        "noAction": "Open the CO2 tank valve or replace the empty CO2 tank, then retest carbonation."
+        "noAction": "Open the CO2 tank valve or replace the empty CO2 tank, then retest carbonation.",
+        "relatedTools": [
+          "Pressure Gauge",
+          "CO2 Tank Key"
+        ],
+        "relatedParts": [
+          "CO2 Tank",
+          "Primary Regulator"
+        ],
+        "relatedImages": [
+          "CO2 Tank",
+          "CO2 Regulator"
+        ]
       },
       {
         "id": "s2",
@@ -20,7 +32,17 @@
         "title": "Regulator Pressure Check",
         "text": "Is the CO2 regulator set near the correct operating pressure?",
         "yes": "s3",
-        "noAction": "Adjust the regulator to the correct target pressure for the system, then retest."
+        "noAction": "Adjust the regulator to the correct target pressure for the system, then retest.",
+        "relatedTools": [
+          "Pressure Gauge",
+          "Adjustment Wrench"
+        ],
+        "relatedParts": [
+          "CO2 Regulator"
+        ],
+        "relatedImages": [
+          "Regulator Adjustment"
+        ]
       },
       {
         "id": "s3",
@@ -28,36 +50,24 @@
         "title": "Carbonator Pump Check",
         "text": "Does the carbonator pump run when carbonated water is dispensed?",
         "yes": "s4",
-        "noAction": "Check pump power, water supply, motor operation, and control signal from the dispenser."
+        "noAction": "Check pump power, water supply, motor operation, and control signal from the dispenser.",
+        "relatedTools": [
+          "Multimeter",
+          "Amp Clamp"
+        ],
+        "relatedParts": [
+          "Carbonator Pump",
+          "Pump Relay"
+        ],
+        "relatedImages": [
+          "Carbonator Pump"
+        ]
       },
       {
         "id": "s4",
         "type": "action",
         "title": "Final Checks",
         "text": "If CO2 supply, regulator pressure, and pump operation are good, check for water supply restrictions, failed check valves, air in the system, or a weak carbonator pump."
-      }
-    ]
-  },
-  {
-    "id": "water-in-co2-line",
-    "title": "Water in CO2 Line",
-    "summary": "Possible check valve failure or backflow issue in the carbonation system.",
-    "access": "pro",
-    "startStep": "s1",
-    "steps": [
-      {
-        "id": "s1",
-        "type": "question",
-        "title": "Confirm Backflow",
-        "text": "Is water visible inside the CO2 line?",
-        "yes": "s2",
-        "noAction": "If no water is visible, inspect for intermittent backflow, low CO2 pressure, or other carbonation issues."
-      },
-      {
-        "id": "s2",
-        "type": "action",
-        "title": "Replace Check Valve",
-        "text": "Shut off CO2, depressurize safely, replace the failed check valve, purge the affected CO2 line, and retest the system."
       }
     ]
   }

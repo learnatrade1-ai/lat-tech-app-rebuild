@@ -22,12 +22,15 @@ function renderWorkflowCards(workflows) {
   workflows.forEach((workflow) => {
     const card = document.createElement("section");
     card.className = "card";
+    card.style.cursor = "pointer";
 
     if (canAccess(workflow)) {
       card.innerHTML = `
         <h3>${workflow.title}</h3>
         <p>${workflow.summary}</p>
       `;
+
+      card.addEventListener("click", () => renderWorkflowDetail(workflow));
     } else {
       card.innerHTML = `
         <h3>${workflow.title}</h3>
@@ -38,6 +41,32 @@ function renderWorkflowCards(workflows) {
 
     app.appendChild(card);
   });
+}
+
+function renderWorkflowDetail(workflow) {
+  const app = document.getElementById("app");
+
+  const stepsHTML = (workflow.steps || [])
+    .map((step) => {
+      return `
+        <section class="card">
+          <h3>${step.title}</h3>
+          <p>${step.text}</p>
+        </section>
+      `;
+    })
+    .join("");
+
+  app.innerHTML = `
+    <button class="back-button" onclick="loadTab('workflows')">← Back to Workflows</button>
+
+    <section class="card">
+      <h3>${workflow.title}</h3>
+      <p>${workflow.summary}</p>
+    </section>
+
+    ${stepsHTML}
+  `;
 }
 
 function renderPlaceholder(title) {

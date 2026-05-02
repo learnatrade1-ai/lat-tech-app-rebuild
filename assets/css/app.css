@@ -114,3 +114,15 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+.image-card {
+  margin-top: 12px;
+}
+
+.workflow-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}

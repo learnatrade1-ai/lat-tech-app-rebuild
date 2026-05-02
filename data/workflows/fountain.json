@@ -21,10 +21,16 @@
           "CO2 Tank",
           "Primary Regulator"
         ],
-        "relatedImages": [
-          "CO2 Tank",
-          "CO2 Regulator"
-        ]
+       "relatedImages": [
+  {
+    "title": "CO2 Tank",
+    "src": "images/workflows/CO2-Tank.jpg"
+  },
+  {
+    "title": "CO2 Regulator",
+    "src": "images/workflows/CO2-Regulator.jpg"
+  }
+]
       },
       {
         "id": "s2",

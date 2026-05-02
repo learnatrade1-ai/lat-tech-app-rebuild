@@ -57,6 +57,23 @@ function renderListSection(title, items) {
     </section>
   `;
 }
+function renderImageSection(title, images) {
+  if (!images || !images.length) return "";
+
+  const imageCards = images.map(image => `
+    <div class="image-card">
+      <strong>${image.title}</strong>
+      <img src="${image.src}" alt="${image.title}" class="workflow-image">
+    </div>
+  `).join("");
+
+  return `
+    <section class="card">
+      <h3>${title}</h3>
+      ${imageCards}
+    </section>
+  `;
+}
 
 function renderWorkflowDecisionStep(workflow, stepId) {
   const app = document.getElementById("app");
@@ -75,7 +92,7 @@ function renderWorkflowDecisionStep(workflow, stepId) {
 
   const toolsHTML = renderListSection("Related Tools", step.relatedTools);
   const partsHTML = renderListSection("Related Parts", step.relatedParts);
-  const imagesHTML = renderListSection("Reference Images", step.relatedImages);
+  const imagesHTML = renderImageSection("Reference Images", step.relatedImages);
 
   if (step.type === "action") {
     app.innerHTML = `
@@ -143,7 +160,7 @@ function renderNoAction(workflowId, stepId) {
 
     ${renderListSection("Related Tools", step.relatedTools)}
     ${renderListSection("Related Parts", step.relatedParts)}
-    ${renderListSection("Reference Images", step.relatedImages)}
+    ${renderImageSection("Reference Images", step.relatedImages)}
   `;
 }
 

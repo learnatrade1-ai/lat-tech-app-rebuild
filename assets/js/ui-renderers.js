@@ -25,10 +25,15 @@ function renderWorkflowCards(workflows) {
     card.style.cursor = "pointer";
 
     if (canAccess(workflow)) {
-      card.innerHTML = `
-        <h3>${workflow.title}</h3>
-        <p>${workflow.summary}</p>
-      `;
+    card.innerHTML = `
+  <h3>Continue Diagnosis in Pro</h3>
+  <p><strong>${workflow.title}</strong></p>
+  <p>${workflow.summary}</p>
+  <p>Unlock advanced technician workflows, guided diagnostics, parts guidance, reference images, and Pro field tools.</p>
+  <a class="upgrade-button" href="https://www.learnatrade.online/product/22679155/lat-technician-pro-founding-access" target="_blank">
+    Unlock LAT Technician Pro Access
+  </a>
+`;
 
       card.addEventListener("click", () =>
         renderWorkflowDecisionStep(workflow, workflow.startStep)
